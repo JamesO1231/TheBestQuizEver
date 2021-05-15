@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li {
+    text-align: center;
+    margin: 20px;
+    color: chartreuse;
+    list-style-type: none;
+}
+
+ul {
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 5px;
+    color: chartreuse;
+    list-style-type: none;
+}
+
+p {
+    color: orange;
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+}
+
+h2 {
+    display: flex;
+    float: left;
+    color: chartreuse;
+}
+
+h3 {
+    display: flex;
+    float: right;
+    color: chartreuse;
+}
+
+input {
+    text-align:center
+}
+
+button {
+    display: inline-block;
+    background-color: chartreuse;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8.5rem;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.fa-crown {
+    color: black;
+    font-size: 0.70rem;
+    margin-left: 0.5rem;
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quiz {
+    display: none;
+}
+
+#timer {
+    background-color: chartreuse;
+    color: black;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#question {
+    margin: 20px;
+}
+
+#result {
+    display: none;
+    color: chartreuse;
+}
+
+#end {
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#score {
+    color: orange;
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+#initials {
+    margin: .5rem;
+    height: 1.75rem;
+}
+
+#highScoreContainer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#highScorePage {
+    display: contents;
+    border: solid;
+    padding-bottom: .3rem;
+    background: white;
+}
+
+#header {
+    background-color: black;
+    width: 100%;
+    color: chartreuse;
+    margin-bottom: 1rem;
+}
+
+#highScoreInitials {
+    padding-left: 2px;
+}
+
+#highScore {
+    font-weight: bold;
+}
+
+#finalButtons {
+    display: none;
+}

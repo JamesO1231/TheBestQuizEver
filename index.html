@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container">
+        <div id="start">
+            <h1>This is a fun quiz. Please submit your score with your name at the end of the quiz.</h1>
+            <button id="startButton">Start Quiz</button>
+            <button id="startPageHighScore" onclick="showHighScore()">High Scores<i class="fas fa-crown"></i></button>
+        </div>
+
+        <div id="quiz">
+            <div id="timer">Time Remaining</div>
+            <div id="question">
+                <p>Questions</p>
+            </div>
+                <li><button id="1" onclick="checkAnswer(1)"></button></li>
+                <li><button id="2" onclick="checkAnswer(2)"></button></li>
+                <li><button id="3" onclick="checkAnswer(3)"></button></li>
+                <li><button id="4" onclick="checkAnswer(4)"></button></li>
+            <div id="result"></div>
+        </div>
+
+        <div id="end">
+            <div id="score">Enter your initials to see high scores</div>
+            <input type="text" placeholder="Enter your initials" name="initials" id="initials"/>
+            <button id="enterScore">Enter Score</button>
+        </div>
+        <div id="highScoreContainer">
+        <div id="highScorePage">
+            <div id="header">
+                <h2>Initials</h2>
+                <h3>Score</h3>
+            </div>
+            <div id="highScoreInitials"></div>
+            <div id="highScore"><ul id="nameScore"></ul></div>
+        </div>
+            
+        <div id="finalButtons">
+                <button id="tryAgain" onclick="tryAgain()">Try Again</button>
+                <button id="clearHighScore" onclick="clearScore()">Clear High Scores</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
